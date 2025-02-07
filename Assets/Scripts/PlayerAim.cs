@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class PlayerAim : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private LayerMask whatIsGround;
     private IA_PlayerInput playerInput;
     private Vector2 mousePosition;
     private Vector3 aimTarget;
@@ -13,7 +12,7 @@ public class PlayerAim : MonoBehaviour
     {
         playerInput = new IA_PlayerInput();
 
-        if (mainCamera == null )
+        if (mainCamera == null)
             mainCamera = Camera.main;
     }
 
