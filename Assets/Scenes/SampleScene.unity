@@ -2151,6 +2151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 10
+  dashDuration: 0.2
 --- !u!143 &5715862837676829400
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2204,7 +2206,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1698455878089783593, guid: 64df381508ab2be47b79f4b2849d0e17, type: 3}
   bulletSpeed: 48
   firePoint: {fileID: 2071668686}
-  fireRate: 0.1
+  fireRate: 0.4
 --- !u!4 &5749613044425257754
 Transform:
   m_ObjectHideFlags: 0
