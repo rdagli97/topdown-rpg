@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
 
     public float health = 100f;
+    public int score = 0;
 
     private CharacterController characterController;
 
@@ -28,6 +29,11 @@ public class PlayerController : MonoBehaviour
         DieCheck();
         
     }
+    private void DieCheck()
+    {
+        if (health <= 0)
+            Debug.Log("Die");
+    }
 
     public void TakeDamage(float _damage)
     {
@@ -39,10 +45,9 @@ public class PlayerController : MonoBehaviour
         health += _hp;
     }
 
-    private void DieCheck()
-    {
-        if (health <= 0)
-            Debug.Log("Die");
 
+    public void IncreaseScore(int _scoreToAdd)
+    {
+        score += _scoreToAdd;
     }
 }

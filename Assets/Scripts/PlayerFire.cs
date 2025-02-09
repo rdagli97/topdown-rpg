@@ -15,7 +15,6 @@ public class PlayerFire : MonoBehaviour
     private void Update()
     {
         fireCooldown -= Time.deltaTime;
-        Debug.Log(CanFire());
     }
 
     private void OnEnable()
