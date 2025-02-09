@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db82f1d2ff691d4e8c45b18dc735dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 5451687812024425460, guid: dba570bda5e1e37409437d71c1883b13, type: 3}
+  healPrefab: {fileID: 1361401781328680664, guid: 219ee7f3474c98543af866cce55f9dfe, type: 3}
 --- !u!96 &5994523226311262385
 TrailRenderer:
   serializedVersion: 3

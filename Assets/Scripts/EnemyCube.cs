@@ -30,8 +30,8 @@ public class EnemyCube : MonoBehaviour
 
         if (Vector3.Distance(transform.position, _targetWithFixedY) < 1f)
         {
-            playerController.TakeDamage(damage);
             Destroy(gameObject);
+            playerController.TakeDamage(damage);
         }
     }
 }
