@@ -2138,6 +2138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c953428f2d280de4c93748aeaa8b21ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &5715862837676829399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2206,7 +2207,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1698455878089783593, guid: 64df381508ab2be47b79f4b2849d0e17, type: 3}
   bulletSpeed: 48
   firePoint: {fileID: 2071668686}
-  fireRate: 0.4
+  fireRate: 0.3
 --- !u!4 &5749613044425257754
 Transform:
   m_ObjectHideFlags: 0

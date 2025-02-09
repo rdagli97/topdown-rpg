@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class EnemyCube : MonoBehaviour
 {
+    [SerializeField] private float damage;
     [SerializeField] private float speed;
     private Vector3 targetPosition;
     private Transform player;
+    private PlayerController playerController;
+
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject _playerTransform = GameObject.FindGameObjectWithTag("Player");
+        player = _playerTransform.transform;
+        playerController = _playerTransform.GetComponent<PlayerController>();
     }
 
     private void Update()
@@ -25,7 +30,7 @@ public class EnemyCube : MonoBehaviour
 
         if (Vector3.Distance(transform.position, _targetWithFixedY) < 1f)
         {
-            Debug.Log("Enemy close enough");
+            playerController.TakeDamage(damage);
             Destroy(gameObject);
         }
     }
