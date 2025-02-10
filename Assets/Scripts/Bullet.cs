@@ -14,7 +14,10 @@ public class Bullet : MonoBehaviour
         int _randomInt = GenerateRandomInt0to100();
 
         if (_randomInt <= 33)
-            Instantiate(healPrefab, collision.gameObject.transform.position, Quaternion.identity);
+        {
+            Transform _goTransform = collision.gameObject.transform;
+            Instantiate(healPrefab, _goTransform.position + new Vector3(0.5f , 0, 0), Quaternion.identity);
+        }
     }
 
     private int GenerateRandomInt0to100()
