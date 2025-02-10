@@ -123,4 +123,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleAmount: 0.05
   speed: 5
-  hpToHeal: 5
+  hpToHeal: 20
